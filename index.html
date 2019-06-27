@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+            /* Style the header */
+            .header {
+                padding: 50px;
+                text-align: center;
+                background: #585858;
+                color: #bfdcef;
+            }
+            /* Style the top navigation bar */
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                float: left; /* Make sure that the links stay side-by-side */
+                display: block; /* Change the display to block, for responsive reasons (see below) */
+                color: white; /* White text color */
+                text-align: center; /* Center the text */
+                padding: 14px 20px; /* Add some padding */
+                text-decoration: none; /* Remove underline */
+            }
+
+            /* Right-aligned link */
+            .navbar a.right {
+                float: right; /* Float a link to the right */
+            }
+
+            /* Change color on hover/mouse-over */
+            .navbar a:hover {
+                background-color: #ddd; /* Grey background color */
+                color: black; /* Black text color */
+            }
+
+            /* Column container */
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sits next to each other */
+            /* Sidebar/left column */
+            .side {
+                flex: 1;
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+
+            /* Main column */
+            .main {
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+            }
+
+            /* Fake image, just for this example */
+            .fakeimg {
+                background-color: #aaa;
+                width: 80%;
+                padding: 20px;
+            }
+        </style>
+
+</head>
+
+
+<body>
+<div class="header">
+<h1>‘Wow, What Is That?’</h1>
+</div>
+
+<div class="navbar">
+    <a href="#task1">Task 1</a>
+    <a href="#">Task 2</a>
+</div>
+
+<div class="row">
+    <div class="side">
+        <h2>About Me</h2>
+         <h5>Photo of me:</h5>
+             <div class="fakeimg" style="height:200px;">Image</div>
+              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <h3>More Text</h3>
+         <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+    </div>
+
+    <div class="main">
+      <h2> Useful links </h2>
+
+        <h3>HTML</h3>
+            <ul>
+                <li><a href="https://medium.com/@blondiebytes/how-to-create-interactive-websites-with-javascript-627a6d998fed">How to Create Interactive Websites with JavaScript</a></li>
+                <li><a href="http://htmlbook.ru/samhtml">Самоучитель HTML4</a></li>
+                <li><a href="http://htmlbook.ru/samhtml5">Самоучитель HTML5</a></li>
+            </ul>
+
+        <h3>CSS</h3>
+            <ul>
+                <li><a href="http://htmlbook.ru/samcss">Самоучитель CSS</a></li>
+                <li><a href="http://www.wisdomweb.ru/CSS3/index.php">Что такое CSS3?</a></li>
+                <li><a href="https://www.youtube.com/watch?v=NkmZl1Yy94Q&list=PLY4rE9dstrJzdkXYQXpZA0voVgB_0RJ_q">Video course</a></li>
+            </ul>
+         <h3>JavaScript</h3>
+            <ul>
+                <li><a href="https://learn.javascript.ru/">Современный учебник JavaScript</a></li>
+                <li><a href="https://www.youtube.com/watch?v=n0sPFaLsNeI&list=PLY4rE9dstrJymG1GyPLgOKsJNq9r-p6pX">Video course</a></li>
+            </ul>
+        <h3 id="task1">Task 1</h3>
+
+            <p>Задание: установить git, node, npm. Создать аккаунт на <a href="https://github.com/">Github</a> и публичный репозиторий для проекта. Клонировать из репозитория проект, сделать любые изменения в нем сделать коммит и запушить изменения.</p>
+             <div class="fakeimg" style="height:200px;">Image</div>
+    </div>
+</div>
+</body>
+</html>
