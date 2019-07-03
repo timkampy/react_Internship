@@ -1,0 +1,93 @@
+
+    /* Style the header */
+.header {
+    padding: 50px;
+    text-align: center;
+    background: url("https://cdn.dribbble.com/users/15687/screenshots/6713969/stargate3.png");
+    background-repeat: no-repeat;
+    background-color: #c8b8b5;
+    background-position: center;
+    color: whitesmoke;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: black; /* Black text color */
+    text-align: center; /* Center the text */
+    padding: 14px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex:10%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: auto;
+}
+
+/* Main column */
+.main {
+    flex: 80%;
+    background-color: white;
+    padding: 20px;
+}
+/*Working area*/
+
+.imageWrapper {
+    background: url('/react_Internship/images/Avatar.jpg');
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-size: cover;
+}
+.imageWrapper::before{
+    position: absolute;
+    content: '';
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 80%;
+    padding: 20px;
+}
+footer{
+    background-color: black;
+    flex: 70%;
+    color: whitesmoke;
+    padding: 10px;
+    padding-right: 10px;
+    height: 70px;
+}
+
+footer p.hover{
+    flex: 70%;
+    color: white;
+    display: block;
+}
