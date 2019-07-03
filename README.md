@@ -1,3 +1,2 @@
 # react_Internship
-
-Hello
+Anna Korchevska
