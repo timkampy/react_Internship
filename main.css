@@ -4,7 +4,7 @@
     padding: 50px;
     text-align: center;
     background: url("https://cdn.dribbble.com/users/15687/screenshots/6713969/stargate3.png");
-    background-repeat: no-repeat;
+    background-repeat: inherit;
     background-color: #c8b8b5;
     background-position: center;
     color: whitesmoke;
@@ -52,6 +52,15 @@
     background-color: white;
     padding: 20px;
 }
+
+.main a {
+    text-decoration: none; /* Remove underline */
+    color: dimgrey;
+}
+
+.main p {
+    line-height: 1.3;
+}
 /*Working area*/
 
 .imageWrapper {
@@ -77,16 +86,19 @@
     width: 80%;
     padding: 20px;
 }
-footer{
+footer {
     background-color: black;
     flex: 70%;
-    color: whitesmoke;
     padding: 10px;
-    padding-right: 10px;
     height: 70px;
 }
 
-footer p.hover{
+footer p {
+text-align: left;
+    color: whitesmoke;
+}
+
+footer p.hover {
     flex: 70%;
     color: white;
     display: block;
