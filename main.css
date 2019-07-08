@@ -1,14 +1,24 @@
 
     /* Style the header */
 .header {
-    padding: 50px;
+    padding: 80px;
     text-align: center;
-    background: url("https://cdn.dribbble.com/users/15687/screenshots/6713969/stargate3.png");
-    background-repeat: inherit;
-    background-color: #c8b8b5;
+    background: url("https://cdn.dribbble.com/users/2400633/screenshots/4801896/28.jpg");
+    background-repeat: no-repeat;
+    background-color: white;
     background-position: center;
-    color: whitesmoke;
+    color: #c8b8b5;
 }
+    .header h1{
+    padding: 50px 0 0 0; /* Move Title down to be between two ferrets on the BG*/
+    }
+
+    .logo {
+    background-image: url("/images/ferret.png");
+    display: inline-block;
+        background-size: auto;
+
+    }
 
 /* Style the top navigation bar */
 .navbar {
@@ -19,7 +29,7 @@
 /* Style the navigation bar links */
 .navbar a {
     float: left; /* Make sure that the links stay side-by-side */
-    display: block; /* Change the display to block, for responsive reasons (see below) */
+    display: inline-block; /* Change the display to block, for responsive reasons (see below) */
     color: black; /* Black text color */
     text-align: center; /* Center the text */
     padding: 14px; /* Add some padding */
@@ -94,12 +104,12 @@ footer {
 }
 
 footer p {
-text-align: left;
+    text-align: right;
     color: whitesmoke;
 }
-
-footer p.hover {
+footer p:hover {
     flex: 70%;
-    color: white;
+    color: #dddddd;
     display: block;
 }
+
