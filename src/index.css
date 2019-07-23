@@ -1,15 +1,15 @@
-body {
+body. html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
 }
 
 
@@ -17,12 +17,8 @@ code {
 .header {
   padding: 80px;
   text-align: center;
-  background: url('/images/Header_bg.png');
-  background-repeat: no-repeat;
-  background-color: white;
-  background-size: 60%;
-  background-position: right;
-  color: #c8b8b5;
+    background-size: 60%;
+    background: url('/images/Header_bg.png') no-repeat right;
   height: 650px;
 }
 .header h1{
@@ -110,6 +106,10 @@ code {
   background-color: #aaa;
   width: 80%;
   padding: 20px;
+  height:60px;
+}
+.bigImg {
+    height: 200px;
 }
 footer {
   background-color: black;
