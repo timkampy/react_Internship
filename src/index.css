@@ -1,4 +1,4 @@
-body. html {
+.container {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -7,49 +7,86 @@ body. html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-  monospace;
-}
-
-
 /* Style the header */
 .header {
-  padding: 80px;
-  text-align: center;
-    background-size: 60%;
-    background: url('/images/Header_bg.png') no-repeat right;
+  text-align: left;
+  background-size: 60%;
+  background-image: url('./images/Header_bg.png');
+  background-repeat: no-repeat;
+  background-position: right;
   height: 650px;
-}
-.header h1{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 50px 0 0 0; /* Move Title down to be between two ferrets on the BG*/
-  font-family: "kelvetica nobis";
+}
+.header h1 {
+  font-size: 160px;
+  margin: 0;
+}
+.header h2 {
+  font-size: 60px;
+  margin: 0;
+}
+.header p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
 }
 
-.logo {
-  height: 30px;
-  width: auto;
+.viewMoreLink {
+  color: #d70629;
+  text-decoration: none;
+  font-size: 14px;
+
 }
 
 /* Style the top navigation bar */
-.navbar {
+.top_navbar {
   overflow: hidden;
-  background-color: white;
+  background-color: black;
+
 }
 
 /* Style the navigation bar links */
-.navbar a {
+.top_navbar a {
   float: left; /* Make sure that the links stay side-by-side */
   display: inline-block; /* Change the display to block, for responsive reasons (see below) */
-  color: black; /* Black text color */
+  color: lightgray; /* Black text color */
   text-align: center; /* Center the text */
-  padding: 14px; /* Add some padding */
+  padding: 20px; /* Add some padding */
   text-decoration: none; /* Remove underline */
+  font-size: 14px;
 }
 
+
 /* Change color on hover/mouse-over */
-.navbar a:hover {
-  background-color: #ddd; /* Grey background color */
+.top_navbar a:hover {
+  color: white; /* highliting font on hover*/
+}
+.top_navbar .nav_right {
+  float: right;
+}
+#logo {
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+  color: #d70629;
+  font-weight: 600;
+}
+
+.middle_navbar {
+  background-color: white;
+  height: 120px;
+}
+
+.middle_navbar a {
+  padding: 40px 30px 30px 30px ;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+/* Change color on hover/mouse-over */
+.middle_navbar a:hover {
+  color: #d70629;
 }
 
 /* Column container */
@@ -114,10 +151,9 @@ code {
 footer {
   background-color: black;
   flex: 70%;
-  padding: 10px;
+  padding: 5px;
   height: 70px;
 }
-
 footer p {
   text-align: right;
   color: whitesmoke;

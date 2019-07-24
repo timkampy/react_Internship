@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
@@ -17,17 +16,38 @@ class CaseStudy extends React.Component {
         }
     }
 
+
 render() {
     return (
+
         <section className="container">
-        <div className="navbar">
+
+        <div className="top_navbar">
             <a href="#lesson1">Lesson 1</a>
             <a href="#lesson2">Lesson 2</a>
             <a href="#lesson3">Lesson 3</a>
+            <a href="#" className="nav_right">Investor Relations</a>
+            <a href="#" className="nav_right">English ∨</a>
+            <a href="#" className="nav_right">Support</a>
+        </div>
+
+        <div className="middle_navbar top_navbar">
+            <a href="#" id="logo">Internship</a>
+            <a href="#" className="nav_right"> <i className="fa fa-search nav_right"></i></a>
+            <a href="#" className="nav_right">Careers</a>
+            <a href="#" className="nav_right">Research & Insights</a>
+            <a href="#" className="nav_right">Capabilities</a>
+            <a href="#" className="nav_right">Who We Are</a>
+
         </div>
 
         <div id="header" className="header">
-            <h1>‘Case study’</h1>
+            <h2>The Financial <br/> Future is</h2>
+            <h1>Female</h1>
+            <p>
+                Women are transforming financial <br/> markets and economies across the globe. <br/>Their risk tolerance, confidence, and <br/> willingness to invest will impact our world<br/>for years to come.
+            </p>
+            <a href='#' className="viewMoreLink">View Full Report ></a>
         </div>
 
         <div className="row">
@@ -39,6 +59,7 @@ render() {
 
                 <p>Some text about me</p>
                 <a href={this.state.gitHub}><i className="fab fa-github"></i></a>
+
                 <h3>More Text</h3>
                 <p>Lorem ipsum dolor sit ame.</p>
                 <div className="fakeimg" >Image</div><br/>
@@ -135,8 +156,8 @@ render() {
             </div>
 
             <footer>
-                <p>Developed in July 2019 by {this.state.developer}</p><br/>
-                <p>By template: </p>
+                <p>Developed in July 2019 by {this.state.developer}</p>
+                <p>By template: <a href={this.state.linkToDesign}><i className="fab fa-dribbble"></i></a></p>
             </footer>
         </section>
     )}
