@@ -155,9 +155,39 @@ render() {
                     </ul>
             </div>
 
-            <footer>
-                <p>Developed in July 2019 by {this.state.developer}</p>
-                <p>By template: <a href={this.state.linkToDesign}><i className="fab fa-dribbble"></i></a></p>
+            <footer className="footer">
+                <div className="footer__content">
+                    <ul className="footer__links">
+                        <li><a href="#">Our Purpose &amp; Values</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Ventures</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul className="footer__secondary-links">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Corporate Responsibility</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Leadership</a></li>
+                    </ul>
+                <div className="footer__bottom-wrapper">
+                    <ul className="footer__social">
+                        <li><a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i className="fa fa-youtube " aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i className="fa fa-rss" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <ul className="footer__notice">
+                        <li>© 2019 Internship</li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Notice</a></li>
+                        <li><p>By template: <a href={this.state.linkToDesign}><i className="fab fa-dribbble" aria-hidden="true"></i></a></p></li>
+                        <li><p>Developed in July 2019 by {this.state.developer}</p></li>
+                    </ul>
+                </div>
+                </div>
             </footer>
         </section>
     )}
